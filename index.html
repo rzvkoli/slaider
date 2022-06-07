@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Slider</title>
+    <link rel="stylesheet" href="src/css/style.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+  </head>
+  <body>
+    <div class="container">
+      <div class="slide">
+        <img src="public/img/1.jpg" alt="Black image number One"/>
+      </div>
+      <div class="slide">
+        <img src="public/img/2.jpg" alt="Black image Two"/>
+      </div>
+      <div class="slide">
+        <img src="public/img/3.jpg" alt="Black image number Three"/>
+      </div>
+      <div class="slide">
+        <img src="public/img/4.jpg" alt="Black image number Four"/>
+      </div>
+      <div class="slide">
+        <img src="public/img/5.jpg" alt="Black image number Five"/>
+      </div>
+
+      <a class="prev" onclick="displaySlide((currentIndex - 1))"><i class="bi bi-chevron-left"></i></a>
+      <a class="next" onclick="displaySlide((currentIndex + 1))"><i class="bi bi-chevron-right"></i></a>
+
+      <div class="dots">
+        <span class="dot" onclick="displaySlide(1)"></span>
+        <span class="dot" onclick="displaySlide(2)"></span>
+        <span class="dot" onclick="displaySlide(3)"></span>
+        <span class="dot" onclick="displaySlide(4)"></span>
+        <span class="dot" onclick="displaySlide(5)"></span>
+      </div>
+    </div>
+    <script src="src/js/script.js"></script>
+  </body>
+</html>
